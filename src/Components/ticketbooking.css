@@ -1,52 +1,72 @@
 .ticket-booking {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
   .form-group {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
   }
   
   label {
+    display: block;
+    margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
   }
   
   input[type="text"],
   input[type="email"] {
+    width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #ccc;
     border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0px 0px 5px #007bff;
+    border: 1px solid #ccc;
   }
   
   .submit-btn {
-    background-color: #007bff;
-    color: #fff;
-    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
     font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
   }
   
-  .submit-btn:hover {
-    background-color: #0062cc;
+  @media (min-width: 768px) {
+    .ticket-booking {
+      max-width: 800px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .ticket-booking {
+      max-width: 1000px;
+    }
+  
+    .form-group {
+      display: flex;
+      align-items: center;
+    }
+  
+    label {
+      flex-basis: 25%;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    input[type="text"],
+    input[type="email"] {
+      flex-basis: 75%;
+      margin-right: 20px;
+    }
+  
+    .submit-btn {
+      flex-basis: 100%;
+    }
   }
   

@@ -1,4 +1,3 @@
-
 .show-summary {
     margin: 0 auto;
     width: 90%;
@@ -56,7 +55,7 @@
   .show-summary-form button:hover {
     background-color: #2E8B57;
   }
-
+  
   .booking-button {
     display: inline-block;
     background-color: #007bff;
@@ -72,5 +71,17 @@
   
   .booking-button:hover {
     background-color: #0069d9;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .show-summary-form {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .show-summary-form {
+      width: 100%;
+    }
   }
   
